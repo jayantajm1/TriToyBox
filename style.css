@@ -1,57 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  nav {
-    background-color: #eee;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav li {
-    margin: 0 10px;
-  }
-  
-  nav a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .product {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 10px #ccc;
-    margin: 20px;
-    text-align: center;
-    width: 300px;
-  }
-  
-  .product img {
-    width: 100%;
-  }
-  
-  .product h3
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  /* margin: 0; */
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  height: 70px;
+  font-family: Snap ITC;
+  font-size: 20px;
+}
+header h1{
+  position: relative;
+  bottom: 22px;
+}
+#header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.productHeading{
+  margin: 10px;
+}
+
+
+nav {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+  padding: 8px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+main {
+  margin-top: 100px;
+/* 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+  padding: 20px;
+}
+
+
+.productContainer{
+  display:flex;
+  direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  background-color: #fff;
+  border: 1px solid #979393;
+  box-shadow: 2px 2px 10px #919090;
+  margin: 20px;
+  text-align: center;
+  width: 300px;
+  border-radius: 6px;
+}
+.product img {
+  width: 100%;
+}
+.add-to-cart{
+  padding: 5px;
+  width: 100px;
+  margin: 20px 5px;
+}
+/* 
+.product h3 */
