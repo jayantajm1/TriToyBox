@@ -1,0 +1,75 @@
+.box-container {
+    display: flex;
+    padding: 10px;
+}
+
+.box {
+    border: 2px solid rgb(73, 69, 69);
+    padding: 50px;
+    margin: 20px 70px;
+    width: 300px;
+    text-align: center;
+
+}
+
+.box i {
+    justify-content: center;
+    font-size: 35px;
+    padding: 20px;
+    /* margin: 10px 5px; */
+    border: 2px solid rgb(73, 69, 69);
+    border-radius:50% ;
+}
+.box .fa-sharp{
+    padding: 20px 23px;
+}
+.box h3 {
+    font-size: 23px;
+    margin: 10px 1px;
+}
+.box p {
+    font-size: 16px;
+}
+/* contact Section */
+.contact{
+    padding: 20px;
+}
+.contactContainer{
+    display: flex;
+
+}
+.contactBox{
+    margin: 20px;
+}
+.contact h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.contact form input{
+    padding: 15px;
+    margin: 10px ;
+    border-radius: 6px;
+    border: 2px solid rgb(73, 69, 69);
+    width: 250px;
+    font-size: 15px;
+
+}
+#messagebox{
+    padding: 15px;
+    margin: 10px;
+    border-radius: 6px;
+    border: 2px solid rgb(73, 69, 69);
+    width: 524px;
+    height: 200px;
+    font-size: 15px;
+}
+#sendMessage{
+    color: white;
+    background-color: #0984e3;
+    font-size: 15px;
+}
+iframe{
+    top: 40px;
+    position: relative;
+}
+

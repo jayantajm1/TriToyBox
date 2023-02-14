@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.aboutContainer{
+    padding: 20px;
+    margin: 20px;
+}
+
+.descrip{
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    line-height: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
