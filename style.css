@@ -1,8 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
 }
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -19,19 +22,23 @@ header {
   font-family: Snap ITC;
   font-size: 20px;
 }
-header h1{
+
+header h1 {
   position: relative;
   bottom: 10px;
 }
-#header{
+
+#header {
   /* position: fixed; */
   width: 100%;
   top: 0;
 }
-.tagline{
+
+.tagline {
   font-size: 40px;
 }
-.productHeading{
+
+.productHeading {
   margin: 10px;
 }
 
@@ -61,33 +68,35 @@ nav a {
 
 main {
   /* margin-top: 100px; */
-/* 
+  /* 
   display: flex;
   flex-wrap: wrap;
   justify-content: center; */
   padding: 20px;
 }
 
-.tagline{
+.tagline {
   position: relative;
   top: 90px;
   letter-spacing: 2px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.homeContainer{
+
+.homeContainer {
   display: flex;
   padding: 50px;
   margin: 20px;
 }
-.homeimg{
+
+.homeimg {
   border-radius: 4px;
   margin: 20px 40px;
   position: relative;
   left: 60px;
 }
 
-.productContainer{
-  display:flex;
+.productContainer {
+  display: flex;
   direction: column;
   flex-wrap: wrap;
   justify-content: center;
@@ -102,100 +111,90 @@ main {
   width: 300px;
   border-radius: 6px;
 }
+
 .product img {
   width: 100%;
 }
-.add-to-cart{
+
+.add-to-cart {
   padding: 5px;
   width: 100px;
   margin: 20px 5px;
 }
-/* 
-.product h3 */
-.marketing-site-footer {
-  background: #2c3840;
-  color: #8aa0ae;
-  padding: 2rem 0 0;
-}
 
-.marketing-site-footer .marketing-site-footer-menu-social a {
-  color: #fefefe;
-}
+/*------------------
+<========Footer======>
+-------------------*/
 
-.marketing-site-footer .column-block {
-  margin-bottom: 30px;
-}
-
-.marketing-site-footer > .row {
-  margin-bottom: 1rem;
-}
-
-@media screen and (max-width: 39.9375em) {
-  .marketing-site-footer .columns {
-    margin-bottom: 2rem;
-  }
-}
-
-.marketing-site-footer-name {
-  color: #fefefe;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
-
-.marketing-site-footer-title {
-  color: #fefefe;
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
-}
-
-.marketing-site-footer-block {
-  display: -webkit-flex;
-  display: -ms-flexbox;
+.footerContainer {
   display: flex;
-  margin-bottom: 1rem;
+  padding: 30px;
+  /* margin: 10px; */
 }
 
-.marketing-site-footer-block .fa {
-  font-size: 2rem;
-  color: #020304;
-}
-
-.marketing-site-footer-block p {
-  margin-left: 1rem;
-  line-height: 1.125rem;
-}
-
-.marketing-site-footer-bottom {
-  background: #020304;
-  padding: 1rem 0;
-}
-
-.marketing-site-footer-bottom p,
-.marketing-site-footer-bottom .menu {
-  margin-bottom: 0;
-}
-
-.marketing-site-footer-bottom .marketing-site-footer-bottom-links {
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.marketing-site-footer-bottom .marketing-site-footer-bottom-links a {
+.footerContainer p {
   color: #8aa0ae;
 }
 
-@media screen and (max-width: 63.9375em) {
-  .marketing-site-footer-bottom .marketing-site-footer-bottom-links {
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+.footerContainer a {
+  color: #fefefe;
 }
 
-@media screen and (max-width: 63.9375em) {
-  .marketing-site-footer-bottom {
-    text-align: center;
-  }
+.footerTop {
+  background-color: #2c3840;
 }
 
+.footerHeading {
+  color: #fefefe;
+  padding: 25px 2px;
+  font-size: 30px;
+}
+
+.columns {
+  width: 550px;
+  padding: 10px;
+}
+
+.footerSocial {
+  display: flex;
+}
+
+.footerSocial a {
+  font-size: 25px;
+  padding: 10px;
+}
+
+.footerContact {
+  color: #fefefe;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.instaContainer {
+  display: flex;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+
+.instaBox {
+  margin: 15px 10px;
+}
+
+.footerBottom {
+  background-color: #020304;
+  /* color: #dee5e9; */
+}
+
+/* .column{
+  margin: 2px 100px;
+ 
+} */
+.footerNav {
+  margin: 2px 300px;
+  display: flex;
+}
+
+.footerNav a {
+  padding: 5px;
+  margin: 2px 15px;
+}
