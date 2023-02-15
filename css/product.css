@@ -1,0 +1,16 @@
+.allProductContainer{
+    padding: 50px;
+}
+/* .productContainer img{
+ height: 300px;
+} */
+.pageBtn{
+    display: flex;
+   align-content:flex-start;
+}
+.pageBtn span{
+    border: 2px solid black;
+    padding: 12px;
+    border-radius: 6px;
+    margin:3px;
+}
