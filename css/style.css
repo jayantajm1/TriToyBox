@@ -34,12 +34,6 @@ header h1 {
   top: 0;
 }
 
-/* .navbar {
-  background-color: #444343;
-}
-.navbar a{
-  color: white;
-} */
 
 .flex-align-right {
   margin-left: auto;
@@ -88,12 +82,20 @@ main {
 .homeContainer {
   display: flex;
   padding: 20px;
-  margin: 40px 30px;
+  margin: 30px;
 }
 
+.homeBox {
+  padding: 20px;
+}
+
+/* @media screen and (min-width: 1160px) {
+  .homeBox {
+    padding: 15px;
+  }
+} */
 .homeimg {
   border-radius: 4px;
-  margin: 20px 40px;
   position: relative;
   left: 60px;
   width: 100%;
@@ -185,6 +187,16 @@ main {
 .instaBox {
   margin: 15px 10px;
 }
+
+@media screen and (max-width: 1070px) {
+  .instaBox img {
+    width: 5vw;
+  }
+  .instaBox {
+    margin: 12px 7px;
+  }
+}
+
 
 .footerBottom {
   background-color: #020304;
