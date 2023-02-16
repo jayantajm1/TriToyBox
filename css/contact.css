@@ -1,161 +1,191 @@
 .box-container {
-    display: flex;
-    padding: 10px;
+  display: flex;
+  padding: 10px;
 }
 
 .box {
-    border: 2px solid rgb(73, 69, 69);
-    padding: 50px;
-    margin: 20px 70px;
-    width: 300px;
-    text-align: center;
-
+  border: 2px solid rgb(73, 69, 69);
+  padding: 50px;
+  margin: 20px 70px;
+  width: 300px;
+  text-align: center;
 }
 
 .box i {
-    justify-content: center;
-    font-size: 35px;
-    padding: 20px;
-    /* margin: 10px 5px; */
-    border: 2px solid rgb(73, 69, 69);
-    border-radius:50% ;
+  justify-content: center;
+  font-size: 35px;
+  padding: 20px;
+  /* margin: 10px 5px; */
+  border: 2px solid rgb(73, 69, 69);
+  border-radius: 50%;
 }
-.box .fa-sharp{
-    padding: 20px 23px;
+
+.box .fa-sharp {
+  padding: 20px 23px;
 }
+
 .box h3 {
-    font-size: 23px;
-    margin: 10px 1px;
+  font-size: 23px;
+  margin: 10px 1px;
 }
+
 .box p {
-    font-size: 16px;
+  font-size: 16px;
 }
+
 /* contact Section */
-.contact{
-    padding: 20px;
-}
-.contactContainer{
-    display: flex;
-
-}
-.contactBox{
-    margin: 20px;
-}
-.contact h3{
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-.contact form input{
-    padding: 15px;
-    margin: 10px ;
-    border-radius: 6px;
-    border: 2px solid rgb(73, 69, 69);
-    width: 250px;
-    font-size: 15px;
-
-}
-#messagebox{
-    padding: 15px;
-    margin: 10px;
-    border-radius: 6px;
-    border: 2px solid rgb(73, 69, 69);
-    width: 524px;
-    height: 200px;
-    font-size: 15px;
-}
-#sendMessage{
-    color: white;
-    background-color: #0984e3;
-    font-size: 15px;
-}
-iframe{
-    top: 40px;
-    position: relative;
-}
-.marketing-site-footer {
-  background: #2c3840;
-  color: #8aa0ae;
-  padding: 2rem 0 0;
+.contact {
+  padding: 20px;
 }
 
-.marketing-site-footer .marketing-site-footer-menu-social a {
-  color: #fefefe;
-}
-
-.marketing-site-footer .column-block {
-  margin-bottom: 30px;
-}
-
-.marketing-site-footer > .row {
-  margin-bottom: 1rem;
-}
-
-@media screen and (max-width: 39.9375em) {
-  .marketing-site-footer .columns {
-    margin-bottom: 2rem;
-  }
-}
-
-.marketing-site-footer-name {
-  color: #fefefe;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
-
-.marketing-site-footer-title {
-  color: #fefefe;
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
-}
-
-.marketing-site-footer-block {
-  display: -webkit-flex;
-  display: -ms-flexbox;
+.contactContainer {
   display: flex;
-  margin-bottom: 1rem;
+
 }
 
-.marketing-site-footer-block .fa {
-  font-size: 2rem;
-  color: #020304;
+.contactBox {
+  margin: 20px;
 }
 
-.marketing-site-footer-block p {
-  margin-left: 1rem;
-  line-height: 1.125rem;
+.contact h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
 }
 
-.marketing-site-footer-bottom {
-  background: #020304;
-  padding: 1rem 0;
+.contact form input {
+  padding: 15px;
+  margin: 10px;
+  border-radius: 6px;
+  border: 2px solid rgb(73, 69, 69);
+  width: 250px;
+  font-size: 15px;
+
 }
 
-.marketing-site-footer-bottom p,
-.marketing-site-footer-bottom .menu {
-  margin-bottom: 0;
+#messagebox {
+  padding: 15px;
+  margin: 10px;
+  border-radius: 6px;
+  border: 2px solid rgb(73, 69, 69);
+  width: 524px;
+  height: 200px;
+  font-size: 15px;
 }
 
-.marketing-site-footer-bottom .marketing-site-footer-bottom-links {
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+#sendMessage {
+  color: white;
+  background-color: #0984e3;
+  font-size: 15px;
 }
 
-.marketing-site-footer-bottom .marketing-site-footer-bottom-links a {
-  color: #8aa0ae;
+iframe {
+  top: 40px;
+  position: relative;
+  width: 500px;
+  height: 400px;
 }
-
-@media screen and (max-width: 63.9375em) {
-  .marketing-site-footer-bottom .marketing-site-footer-bottom-links {
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+@media screen and (min-width: 1050px) and (max-width: 1210px) {
+  iframe {
+    width: 450px;
+    height: 350px;
+  }
+  .contact form input {
+    width: 220px;
+  }
+  #messagebox {
+    width: 465px;
+    height: 180px;
   }
 }
-
-@media screen and (max-width: 63.9375em) {
-  .marketing-site-footer-bottom {
-    text-align: center;
+@media screen and (min-width: 990px) and (max-width: 1049px) 
+{
+  iframe {
+    width: 420px;
+    height: 320px;
+  }
+  .contact form input {
+    width: 200px;
+  }
+  #messagebox {
+    width: 425px;
+    height: 140px;
+  }
+  .box {
+    padding: 40px;
+    margin: 20px 50px;
+    width: 280px;
   }
 }
-
+@media screen and (min-width: 890px) and (max-width: 989px) 
+{
+  iframe {
+    width: 350px;
+    height: 290px;
+  }
+  .contact form input {
+    width: 175px;
+    margin: 5px 4px;
+    
+  }
+  #messagebox {
+    width: 360px;
+    height: 120px;
+    margin: 5px;
+  }
+  .box {
+    padding: 40px;
+    margin: 20px 30px;
+    width: 280px;
+  }
+  #sendMessage {
+    width: 150px;
+  }
+}
+@media screen  and (max-width: 889px) 
+{
+  iframe {
+    width: 280px;
+    height: 280px;
+  }
+  .contact form input {
+    width: 165px;
+    margin: 5px 2px;
+    font-size: 13px;
+    
+  }
+  #messagebox {
+    width: 335px;
+    height: 110px;
+    margin: 3px;
+    font-size: 13px;
+  }
+  .box {
+    padding: 30px;
+    margin: 20px 30px;
+    width: 200px;
+  }
+  .box i {
+    justify-content: center;
+    font-size: 25px;
+    padding: 10px;
+  }
+  
+  .box .fa-sharp {
+    padding: 11px 14px;
+  }
+  
+  .box h3 {
+    font-size: 18px;
+    margin: 10px 1px;
+  }
+  .box p {
+    font-size: 14px;
+  }
+  #sendMessage {
+    width: 150px;
+    font-size: 14px;
+  }
+  .contact p{
+    font-size: 15px;
+  }
+}
