@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login {
+    padding: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.loginForm {
+    border: 2px solid black;
+    padding: 20px;
+    width: 360px;
+
+}
+.loginHeading{
+    font-size: 26px;
+    padding: 10px;
+    /* text-align: center; */
+}
+.inputBox{
+    padding: 10px;
+    margin: 5px 2px;
+    border-radius: 4px;
+    font-size: 20px;
+    width: 100%;
+    border: 1px solid rgb(58, 56, 56);
+}
+.remember{
+    margin:15px 5px;
+}
+.loginBtn{
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+    margin: 10px 1px;
+}
+.loginForm p{
+    text-align: center;
+    margin: 10px 1px;
+}
