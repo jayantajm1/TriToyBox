@@ -1,13 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Section  */
+.info-container {
+  padding: 20px 80px;
+}
+
+@media (max-width: 1200px) {
+  .info-container {
+    padding: 8px;
+  }
+}
+
 .box-container {
-  display: flex;
-  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px 1px;
 }
 
 .box {
   border: 2px solid rgb(73, 69, 69);
-  padding: 50px;
-  margin: 20px 70px;
-  width: 300px;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
+  border-radius: 4px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -15,18 +34,18 @@
   justify-content: center;
   font-size: 35px;
   padding: 20px;
-  /* margin: 10px 5px; */
+  margin: 10px 2px;
   border: 2px solid rgb(73, 69, 69);
   border-radius: 50%;
 }
 
 .box .fa-sharp {
-  padding: 20px 23px;
+  padding: 20px 22px;
 }
 
 .box h3 {
   font-size: 23px;
-  margin: 10px 1px;
+  margin: 2px 1px 6px;
 }
 
 .box p {
@@ -34,158 +53,227 @@
 }
 
 /* contact Section */
+
 .contact {
-  padding: 20px;
-}
-
-.contactContainer {
   display: flex;
-
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 20px 80px;
 }
 
-.contactBox {
-  margin: 20px;
+@media (max-width: 1200px) {
+  .contact {
+    padding: 8px;
+  }
+
+  /* .contact form .inputBox input,
+  .contact form #messagebox {
+    border: 1px solid black;
+  } */
+}
+
+.contact form {
+  flex: 1 1 400px;
 }
 
 .contact h3 {
-  font-size: 25px;
-  margin-bottom: 15px;
+  font-size: 30px;
+  color: #333;
+  padding: 15px 1px;
+  text-transform: uppercase;
 }
 
-.contact form input {
-  padding: 15px;
-  margin: 10px;
-  border-radius: 6px;
-  border: 2px solid rgb(73, 69, 69);
-  width: 250px;
+.contact form p {
   font-size: 15px;
-
+  color: #666;
+  line-height: 25px;
 }
 
-#messagebox {
-  padding: 15px;
-  margin: 10px;
-  border-radius: 6px;
-  border: 2px solid rgb(73, 69, 69);
-  width: 524px;
-  height: 200px;
+.contact form .inputBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .inputBox input {
+  width: 49%;
+}
+
+@media (max-width: 450px) {
+
+  .contact form .inputBox input,
+  .contact form #messagebox {
+    width: 99%;
+    margin: 2px 0;
+  }
+}
+
+.contact form .inputBox input,
+.contact form #messagebox {
+  padding: 12px 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  text-transform: none;
+  color: #666;
   font-size: 15px;
+  margin: 8px 0;
+}
+
+
+.contact form #messagebox {
+  height: 150px;
+  resize: none;
+  width: 100%;
 }
 
 #sendMessage {
-  color: white;
-  background-color: #0984e3;
-  font-size: 15px;
+
+  margin: 6px 2px;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 25px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  background: #0984e3;
 }
 
-iframe {
-  top: 40px;
-  position: relative;
-  width: 500px;
-  height: 400px;
+#sendMessage:hover {
+  background: #333;
 }
-@media screen and (min-width: 1050px) and (max-width: 1210px) {
+
+
+.contact .map {
+  margin: 15px 1px;
+  flex: 1 1 400px;
+  width: 100%;
+}
+
+/* @media (max-width: 887px) {
+  .map {
+    height: 260px;
+  }
+} */
+
+/* @media screen and (min-width: 1050px) and (max-width: 1210px) {
   iframe {
     width: 450px;
     height: 350px;
   }
+
   .contact form input {
     width: 220px;
   }
+
   #messagebox {
     width: 465px;
     height: 180px;
   }
 }
-@media screen and (min-width: 990px) and (max-width: 1049px) 
-{
+
+@media screen and (min-width: 990px) and (max-width: 1049px) {
   iframe {
     width: 420px;
     height: 320px;
   }
+
   .contact form input {
     width: 200px;
   }
+
   #messagebox {
     width: 425px;
     height: 140px;
   }
+
   .box {
     padding: 40px;
     margin: 20px 50px;
     width: 280px;
   }
 }
-@media screen and (min-width: 890px) and (max-width: 989px) 
-{
+
+@media screen and (min-width: 890px) and (max-width: 989px) {
   iframe {
     width: 350px;
     height: 290px;
   }
+
   .contact form input {
     width: 175px;
     margin: 5px 4px;
-    
+
   }
+
   #messagebox {
     width: 360px;
     height: 120px;
     margin: 5px;
   }
+
   .box {
     padding: 40px;
     margin: 20px 30px;
     width: 280px;
   }
+
   #sendMessage {
     width: 150px;
   }
 }
-@media screen  and (max-width: 889px) 
-{
+
+@media screen and (max-width: 889px) {
   iframe {
     width: 280px;
     height: 280px;
   }
+
   .contact form input {
     width: 165px;
     margin: 5px 2px;
     font-size: 13px;
-    
+
   }
+
   #messagebox {
     width: 335px;
     height: 110px;
     margin: 3px;
     font-size: 13px;
   }
+
   .box {
     padding: 30px;
     margin: 20px 30px;
     width: 200px;
   }
+
   .box i {
     justify-content: center;
     font-size: 25px;
     padding: 10px;
   }
-  
+
   .box .fa-sharp {
     padding: 11px 14px;
   }
-  
+
   .box h3 {
     font-size: 18px;
     margin: 10px 1px;
   }
+
   .box p {
     font-size: 14px;
   }
+
   #sendMessage {
     width: 150px;
     font-size: 14px;
   }
-  .contact p{
+
+  .contact p {
     font-size: 15px;
   }
-}
+} */
