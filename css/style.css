@@ -28,12 +28,20 @@ header h1 {
   top: 10px;
 }
 
+
+
+nav {
+  background-color: #444343;
+  /* background-color: #eee; */
+  display: flex;
+  justify-content: center;
+}
+
 #header {
   /* position: fixed; */
   width: 100%;
   top: 0;
 }
-
 
 .flex-align-right {
   margin-left: auto;
@@ -48,14 +56,6 @@ header h1 {
 }
 
 
-nav {
-  background-color: #444343;
-  /* background-color: #eee; */
-  display: flex;
-  justify-content: center;
-}
-
-
 nav a {
   /* color: #333; */
   color: white;
@@ -66,6 +66,22 @@ nav a {
 nav a:hover {
   color: #2d2b2b;
   background-color: #d7d1d1;
+}
+
+.navicons {
+  display: none;
+}
+
+
+@media (max-width: 610px) {
+  .navbar {
+    display: none;
+  }
+
+  .navicons {
+    display: flex;
+    /* position: fixed; */
+  }
 }
 
 main {
@@ -192,6 +208,7 @@ main {
   .instaBox img {
     width: 5vw;
   }
+
   .instaBox {
     margin: 12px 7px;
   }
@@ -199,7 +216,7 @@ main {
 
 
 .footerBottom {
-  background-color: #020304;
+  background-color: #111112;
 }
 
 .columns i {
@@ -224,4 +241,31 @@ main {
 .footerNav a {
   padding: 5px;
   margin: 2px 15px;
+}
+
+.footerBottom p {
+  padding: 0 10px 20px;
+  color: white;
+}
+
+@media (max-width: 610px) {
+  .footerContainer {
+    flex-direction: column;
+  }
+
+  footer .footerDescrip {
+    padding: 10px;
+  }
+
+  .column,
+  .footerNav {
+    font-size: 18px;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 1px;
+    margin: auto;
+  }
+  .footerNav li {
+    padding: 10px;
+  }
 }

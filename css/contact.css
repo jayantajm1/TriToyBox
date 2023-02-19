@@ -277,3 +277,28 @@
     font-size: 15px;
   }
 } */
+
+
+
+
+.footerBottom p {
+  padding: 0 10px 20px;
+  color: white;
+}
+
+
+
+@media (max-width: 610px) {
+  .footerContainer {
+    flex-direction: column;
+  }
+
+  .column,
+  .footerNav {
+    flex-direction: column;
+    padding: 10px 1px;
+    margin: auto;
+  }
+}
+
+
