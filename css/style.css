@@ -10,7 +10,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 header {
@@ -72,7 +72,6 @@ nav a:hover {
   display: none;
 }
 
-
 @media (max-width: 610px) {
   .navbar {
     display: none;
@@ -83,6 +82,54 @@ nav a:hover {
     /* position: fixed; */
   }
 }
+
+/* Navbar sidebar for small devices
+ */
+/* .side-bar {
+  position: fixed;
+  top: 0;
+  left: -110%;
+  height: 100%;
+  width: 30rem;
+  background: #fff;
+  z-index: 10000;
+}
+.side-bar.active {
+  left: 0;
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+}
+.side-bar #close-side-bar {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: #666;
+}
+.side-bar #close-side-bar:hover {
+  transform: rotate(90deg);
+  color: #333;
+}
+.side-bar .navbar {
+  padding-top: 1rem;
+}
+.side-bar .navbar a {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  color: #666;
+}
+.side-bar .navbar a:hover {
+  color: #0984e3;
+}
+.side-bar .navbar a:hover i {
+  padding-right: 2rem;
+}
+.side-bar .navbar a i {
+  padding-right: 0.5rem;
+} */
+
 
 main {
   padding: 20px;
@@ -95,29 +142,67 @@ main {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+@media screen and (min-width: 761px) and (max-width: 890px) {
+  .tagline {
+    position: relative;
+    top: 30px;
+    letter-spacing: 2px;
+    font-size: 32px;
+  }
+
+  .homeimg {
+    width: 300px;
+  }
+
+}
+
+@media screen and (max-width: 760px) {
+
+  .tagline {
+    position: relative;
+    top: 30px;
+    font-size: 33px;
+    margin: 0 1px 10px;
+    text-align: center;
+  }
+
+  .homeimg {
+    display: flex;
+    width: 350px;
+    margin: 2px 1px;
+
+  }
+
+
+  .homeContainer {
+    flex-direction: column-reverse;
+  }
+
+}
+
 .homeContainer {
   display: flex;
   padding: 20px;
-  margin: 30px;
+  gap: 7%;
+
 }
 
 .homeBox {
   padding: 20px;
 }
 
-/* @media screen and (min-width: 1160px) {
-  .homeBox {
-    padding: 15px;
-  }
-} */
 .homeimg {
   border-radius: 4px;
-  position: relative;
-  left: 60px;
-  width: 100%;
   max-width: 500px;
-  height: auto;
 }
+
+/* @media screen and (min-width: 890px) {
+  .homeimg {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+} */
 
 .productContainer {
   display: flex;
@@ -175,7 +260,7 @@ main {
 }
 
 .columns {
-  width: 550px;
+  width: 100%;
   padding: 10px;
 }
 
@@ -203,17 +288,6 @@ main {
 .instaBox {
   margin: 15px 10px;
 }
-
-@media screen and (max-width: 1070px) {
-  .instaBox img {
-    width: 5vw;
-  }
-
-  .instaBox {
-    margin: 12px 7px;
-  }
-}
-
 
 .footerBottom {
   background-color: #111112;
@@ -248,7 +322,28 @@ main {
   color: white;
 }
 
-@media (max-width: 610px) {
+
+@media screen and (min-width: 861px)and (max-width: 1070px) {
+  .instaBox img {
+    width: 60px;
+  }
+
+  .instaBox {
+    margin: 12px 7px;
+  }
+}
+
+@media screen and (min-width: 611px) and (max-width: 860px) {
+  .instaBox img {
+    width: 50px;
+  }
+
+  .instaBox {
+    margin: 12px 2px;
+  }
+}
+
+@media (max-width: 640px) {
   .footerContainer {
     flex-direction: column;
   }
@@ -265,7 +360,12 @@ main {
     padding: 10px 1px;
     margin: auto;
   }
+
   .footerNav li {
     padding: 10px;
+  }
+
+  .instaBox img {
+    width: 60px;
   }
 }
