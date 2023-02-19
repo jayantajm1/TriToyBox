@@ -1,0 +1,97 @@
+* {
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+/*
+.login {
+    padding: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.loginForm {
+    border: 2px solid black;
+    padding: 20px;
+    width: 360px;
+
+}
+.loginHeading{
+    font-size: 26px;
+    padding: 10px;
+    /* text-align: center; */
+}
+/*
+.inputBox{
+    padding: 10px;
+    margin: 5px 2px;
+    border-radius: 4px;
+    font-size: 20px;
+    width: 100%;
+    border: 1px solid rgb(58, 56, 56);
+}
+.remember{
+    margin:15px 5px;
+}
+.loginBtn{
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+    margin: 10px 1px;
+}
+.loginForm p{
+    text-align: center;
+    margin: 10px 1px;
+}*/
+/* register form */
+  
+  form {
+    display: flex;
+    padding: 6px;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+  }
+  
+  h1, p {
+    text-align: center;
+  }
+  
+  /* desired spacing for input fields */
+  /* more styles added to beautify the input fields */
+input {
+    display: flex;
+    margin: 0.25em 0em 1em 0em;
+    outline: none;
+    padding: 0.5em;
+    background-color: rgb(225, 225, 225);
+    border-radius: 0.25em;
+    color: black;
+    border: 1px solid rgb(58, 56, 56);
+    width: 100%;
+   
+  }
+  /* styles for button */
+button {
+    padding: 0.75em;
+    border: none;
+    outline: none;
+    background-color: rgb(68, 18, 232);
+    color: white;
+    border-radius: 0.25em;
+  }
+  
+  /* hover functionality for button */
+  button:hover {
+    cursor: pointer;
+    background-color: rgb(41, 4, 164);
+  }
+  
+  
