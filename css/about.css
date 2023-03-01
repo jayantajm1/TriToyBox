@@ -17,7 +17,7 @@
         margin: 10px;
     }
 
-  
+
 }
 
 @media screen and (max-width: 690px) {
@@ -25,7 +25,7 @@
         padding: 7px;
         margin: 7px;
     }
-    
+
 }
 
 .descrip {
@@ -33,4 +33,13 @@
     /* font-family: 'Ubuntu', sans-serif; */
 
     font-family: 'Varela Round', sans-serif;
+}
+
+
+@media screen and (max-width: 610px) {
+
+    
+    .aboutContainer {
+        margin-top: 200px;
+    }
 }

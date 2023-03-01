@@ -299,6 +299,8 @@
     padding: 10px 1px;
     margin: auto;
   }
+
+  .info-container {
+    margin-top: 150px;
+  }
 }
-
-
